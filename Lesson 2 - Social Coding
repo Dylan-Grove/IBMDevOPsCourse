@@ -1,0 +1,42 @@
+------------------------------------------------------------
+Social Programinging
+-Use repositories like git to gain benefits of opensource development in your enterprise environment
+-You can reuse code by forking repositories
+
+Pair programing
+- Useful for knowledge transfer
+- creates higher quality code.
+
+------------------------------------------------------------
+Git guidlines
+- create separate repos for every microservice
+- create a new branch for every issue
+- use pull requests to merge to master
+- every pull request is an opportunity for code review, don't merge your own code.
+
+Branch workflow:
+
+github repo    <--Merge---    Remote Branch   
+
+|                             ^
+|                             |
+|                             |          
+clone                         Push
+|                             |
+|                             |
+v                             |
+
+local report   ---Branch-->   local branch
+
+------------------------------------------------------------
+Small Batches
+- work in small batches to deliver something useful quickly
+using single peice flow leads to faster feedback loops so that you can provide a better product in the end instead of shipping one big solution
+
+------------------------------------------------------------
+MVP = Minimum viable product
+- its the cheapest experiment you can do to test a hypothesis and learn.
+- Focused on learning, not delivery
+- At the end of each MVP, you decide whether to piot or perservere
+- It's fine if it fail because you learned
+- What will you do next time instead?
