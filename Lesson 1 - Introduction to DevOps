@@ -1,40 +1,51 @@
-Fundementals to ensuring the DevOPs inititives work:
+------------------------------------------------------------
+Fundamentals to ensuring the DevOps initiatives work:
 Think differently
--- social coding
--- working in small batches
--- minimum viable product
--- Fail fast and often
+- Social coding
+- Working in small batches
+- Minimum viable product
+- Fail fast and often
+
 Work Differently
--- test driven development
--- behaviour driven development
--- continuous integration
--- continuous delivery
+- Test-driven development
+- Behaviour-driven development
+- Continuous integration
+- Continuous delivery
+
 Organize Differently
--- organization impacts designs
+- Organization impacts designs
+
 Measure Differently
--- measure what amtters
--- you get what you measure
+- Measure what matters
+- You get what you measure
 
 
+------------------------------------------------------------
+Disruption
 - 52% of fortune 500 companys from 200s are gone
 - All businessess will be distrupted
 
-Technology is the enabler of innovation, rather than the driver of innovation. You must have an innovative business idea to leverage technology.
+Technology and Innovation
+- Technology serves as an enabler, not the sole driver, of innovation.
+- Innovation in business ideas is paramount to leverage technology effectively.
 
-In 2009, John Allspaw described an innovative approach to managing development and operations that enabled Flickr to complete over ten deploys per day, when many companies were completing fewer than one deploy every six months. This was a key moment in the growth of DevOps.
+------------------------------------------------------------
+DevOps Emergence
+- In 2009, John Allspaw showcased Flickr's groundbreaking deployment strategy, completing over ten deploys per day, a milestone in DevOps evolution.
+- DevOps integrates development and operation engineers throughout the development lifecycle, adhering to Lean and Agile principles for rapid and continuous software delivery.
 
-DevOps is the practice of development and operation engineers working together during the entire development lifecycle, following Lean and Agile principles that allow them to deliver software in a rapid and continuous manner.
+------------------------------------------------------------
+Cultural Transformation
+- DevOps embodies a cultural shift and a new work paradigm, emphasizing culture, methods, and tools.
+- Core characteristics include cultural transformation, automated pipelines, infrastructure as code, and immutable infrastructure.
 
-DevOps is not it is not just Dev and Ops working together. It is a cultural change and a different way to work. DevOps has three dimensions: culture, methods, and tools. Of these, culture is the most important. 
+------------------------------------------------------------
+DevOps Origins
+- The DevOps movement traces back to 2007 when Patrick Debois and Andrew Clay Shafer convened conferences to discuss shared experiences.
+- Allspaw's 2009 presentation, "10+ Deploys Per Day – Dev and Ops Cooperation at Flickr," along with events like DevOpsDays initiated by Debois, contributed to DevOps' proliferation.
 
-The essential characteristics of DevOps include cultural change, automated pipelines, infrastructure as code, immutable infrastructure, cloud native application design, the ecosystem of containers, and how to deploy with immutable infrastructure.
-
-DevOps started in 2007 when Patrick Debois and Andrew Clay Shafer began to gather like-minded people together at conferences to talk about common experiences.
-
-In 2009, Allspaw delivered his now famous “10+ Deploys Per Day – Dev and Ops Cooperation at Flickr” presentation and the idea gained ground. Also in 2009, Patrick Debois started a conference called DevOpsDays that helped spread the DevOps message.
-
-Books such as Continuous Delivery in 2011, The Phoenix Project in 2015, and The DevOps Handbook in 2016, helped practitioners understand how DevOps worked.
-
-The major influential people of the early DevOps movement: Patrick Debois, Andrew Clay Shafer, John Allspaw, Jez Humble, Gene Kim, John Willis, Bridget Kromhout, and Nicole Forsgren, went out and made a difference, showing the results that could be achieved with DevOps.
-
-The message spread from practitioner to practitioner until they began to realize what was possible with DevOps and that it was a better way to work.
+------------------------------------------------------------
+Knowledge Dissemination
+- Publications like "Continuous Delivery" (2011), "The Phoenix Project" (2015), and "The DevOps Handbook" (2016) elucidated DevOps methodologies.
+- Pioneers such as Patrick Debois, Andrew Clay Shafer, John Allspaw, Jez Humble, Gene Kim, John Willis, Bridget Kromhout, and Nicole Forsgren drove DevOps' adoption and demonstrated its efficacy.
+- Through practitioner-to-practitioner dissemination, the DevOps ethos gained momentum, showcasing its transformative potential in modern workflows.
