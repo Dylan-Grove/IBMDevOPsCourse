@@ -1,21 +1,28 @@
 ------------------------------------------------------------
 Social Programinging
+------------------------------------------------------------
 -Use repositories like git to gain benefits of opensource development in your enterprise environment
 -You can reuse code by forking repositories
 
+------------------------------------------------------------
 Pair programing
+------------------------------------------------------------
+- 2 people program together
+- 1 drives, 1 reviews, switch after 20 minutes
 - Useful for knowledge transfer
 - creates higher quality code.
 
 ------------------------------------------------------------
 Git guidlines
+------------------------------------------------------------
 - create separate repos for every microservice
 - create a new branch for every issue
 - use pull requests to merge to master
 - every pull request is an opportunity for code review, don't merge your own code.
 
-Branch workflow:
-
+------------------------------------------------------------
+Git Branch workflow
+------------------------------------------------------------
 github repo    <--Merge---    Remote Branch   
 
 |                             ^
@@ -30,13 +37,56 @@ local report   ---Branch-->   local branch
 
 ------------------------------------------------------------
 Small Batches
+------------------------------------------------------------
 - work in small batches to deliver something useful quickly
 using single peice flow leads to faster feedback loops so that you can provide a better product in the end instead of shipping one big solution
 
 ------------------------------------------------------------
 MVP = Minimum viable product
+------------------------------------------------------------
 - its the cheapest experiment you can do to test a hypothesis and learn.
 - Focused on learning, not delivery
 - At the end of each MVP, you decide whether to piot or perservere
 - It's fine if it fail because you learned
 - What will you do next time instead?
+
+------------------------------------------------------------
+TTD - Test driven development
+------------------------------------------------------------
+- test cases drive the design
+- you write the tests first and then you write the code to make the tests pass
+- this keeps you focused on the purpose of the code.
+- code is of no use if your client can't call it.
+- In order to create a CI/CD pipe, you must automate testing
+------------------------------------------------------------
+TTD Workflow
+------------------------------------------------------------
+Red Green Refactor
+Write a test case that fails ---> 
+write just enough code to pass  ---->
+Improve code quality ---> 
+Back to the start.
+
+------------------------------------------------------------
+BDD - Behavior driven development 
+------------------------------------------------------------
+- Descrbes the behavior of the system from the outside
+- great for itegration testing
+- Uses a syntax both devs and stakeholders can understand
+- Ensures you are building the right thing. TTD = building the thing right
+
+------------------------------------------------------------
+BDD Workflow
+------------------------------------------------------------
+Explore the problem domain and describe the behavior
+Document the behavior using gherkin syntax
+use BDD tools to run those scenarios
+Document that's both the specification and the tests.
+
+------------------------------------------------------------
+Gherkin Syntax
+------------------------------------------------------------
+Given (some context)
+When (some event happens)
+Then (some testable outcome)
+And (continue)
