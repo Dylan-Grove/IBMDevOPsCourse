@@ -1,5 +1,6 @@
 ------------------------------------------------------------
 Fundamentals to ensuring the DevOps initiatives work:
+------------------------------------------------------------
 Think differently
 - Social coding
 - Working in small batches
