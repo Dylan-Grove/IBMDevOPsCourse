@@ -22,30 +22,37 @@ Measure Differently
 
 ------------------------------------------------------------
 Disruption
+------------------------------------------------------------
 - 52% of fortune 500 companys from 200s are gone
 - All businessess will be distrupted
 
+------------------------------------------------------------
 Technology and Innovation
+------------------------------------------------------------
 - Technology serves as an enabler, not the sole driver, of innovation.
 - Innovation in business ideas is paramount to leverage technology effectively.
 
 ------------------------------------------------------------
 DevOps Emergence
+------------------------------------------------------------
 - In 2009, John Allspaw showcased Flickr's groundbreaking deployment strategy, completing over ten deploys per day, a milestone in DevOps evolution.
 - DevOps integrates development and operation engineers throughout the development lifecycle, adhering to Lean and Agile principles for rapid and continuous software delivery.
 
 ------------------------------------------------------------
 Cultural Transformation
+------------------------------------------------------------
 - DevOps embodies a cultural shift and a new work paradigm, emphasizing culture, methods, and tools.
 - Core characteristics include cultural transformation, automated pipelines, infrastructure as code, and immutable infrastructure.
 
 ------------------------------------------------------------
 DevOps Origins
+------------------------------------------------------------
 - The DevOps movement traces back to 2007 when Patrick Debois and Andrew Clay Shafer convened conferences to discuss shared experiences.
 - Allspaw's 2009 presentation, "10+ Deploys Per Day – Dev and Ops Cooperation at Flickr," along with events like DevOpsDays initiated by Debois, contributed to DevOps' proliferation.
 
 ------------------------------------------------------------
 Knowledge Dissemination
+------------------------------------------------------------
 - Publications like "Continuous Delivery" (2011), "The Phoenix Project" (2015), and "The DevOps Handbook" (2016) elucidated DevOps methodologies.
 - Pioneers such as Patrick Debois, Andrew Clay Shafer, John Allspaw, Jez Humble, Gene Kim, John Willis, Bridget Kromhout, and Nicole Forsgren drove DevOps' adoption and demonstrated its efficacy.
 - Through practitioner-to-practitioner dissemination, the DevOps ethos gained momentum, showcasing its transformative potential in modern workflows.
