@@ -39,7 +39,7 @@ local report   ---Branch-->   local branch
 Small Batches
 ------------------------------------------------------------
 - work in small batches to deliver something useful quickly
-using single peice flow leads to faster feedback loops so that you can provide a better product in the end instead of shipping one big solution
+- using single peice flow leads to faster feedback loops so that you can provide a better product in the end instead of shipping one big solution
 
 ------------------------------------------------------------
 MVP = Minimum viable product
@@ -78,10 +78,10 @@ BDD - Behavior driven development
 ------------------------------------------------------------
 BDD Workflow
 ------------------------------------------------------------
-Explore the problem domain and describe the behavior
-Document the behavior using gherkin syntax
-use BDD tools to run those scenarios
-Document that's both the specification and the tests.
+- Explore the problem domain and describe the behavior
+- Document the behavior using gherkin syntax
+- use BDD tools to run those scenarios
+- Document that's both the specification and the tests.
 
 ------------------------------------------------------------
 Gherkin Syntax
@@ -90,3 +90,43 @@ Given (some context)
 When (some event happens)
 Then (some testable outcome)
 And (continue)
+
+------------------------------------------------------------
+Cloud native apps
+------------------------------------------------------------
+- A collection of stateless microservices
+- each service maintains its own Deboisfailing instances are killed nad respawned
+- continuous delivery of services
+- talk to eachother using rest APIs
+
+
+------------------------------------------------------------
+Failure happens
+------------------------------------------------------------
+- embrace Failure
+- move from how to aboid -> how to identify and what to do about it
+- move from operation concern -> devleioper concern
+- plan to be throttled
+- plant to retry
+- degrade gracefully, retry exponentially longer periods.
+- cache when appropriate
+
+------------------------------------------------------------
+Circuit breaker pattern
+------------------------------------------------------------
+- A system that checks if connected microservices are communicating as a whole
+- monitoring for failure up to a certain limit or threshold
+- if there is a point of failure, it stops cascading failure requests and just tells the system to
+hold off until it is working again
+- CLosed -> Open -> half open -> either back to open or back to clsoed.
+
+------------------------------------------------------------
+Bulkhead pattern
+------------------------------------------------------------
+- split up how services connect to the user so that the entire app doesn't fail, only a service.
+
+------------------------------------------------------------
+Chaos engineering
+------------------------------------------------------------
+- Kill things on purpose to learn how to respond and find gaps in redundancy
+- Netflix Chaos monkey
