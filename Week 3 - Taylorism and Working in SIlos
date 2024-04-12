@@ -1,0 +1,140 @@
+------------------------------------------------------------
+Taylorism and Working in Silos
+------------------------------------------------------------
+- Value individuals and interactions over processes and tools
+- Automate relentlessly
+- Push smaller releases faster
+- Taylorism is the comand and control management
+- named after Frederick Winslow Taylor, he defined silos
+- Abandon command and control
+- hire smart people and let them tell you what to do
+- Handoffs from silos cause issues
+
+
+------------------------------------------------------------
+Software Engineering vs. Civil Engineering
+------------------------------------------------------------
+- Treat software like product engineering, not like civil engineering
+- Small teams own applications and maintain them
+
+
+------------------------------------------------------------
+Required DevOps Behaviors
+------------------------------------------------------------
+Old way vs new 
+- manual config changs to infra -> automated deploy to all envs
+- app architecture defined by network design -> net design defined by app architectures.
+- bespoke infra built once, then maintained -> ephemeral infra made for each new deploy
+- risk managed through change windows -> rosk manged through progressive action
+-> process baised toward "build once" -> builds are repeatable leveraging IaC
+
+- Developments wants innovation
+- ops wants stability
+- they are in opposition
+- no win scenario:
+-- if the website works, the devs get the praise
+-- if website down, ops get the blame
+
+old way vs new
+- silos and handoffs -> shared ownership and high collab
+- fear of change -> risk mangment by embracing change, make small changes
+- build once, handcrafted -> infrastructure as code, ephemeral
+- manual fulfullment -> automated self-service
+- alarms, callbacks and escalations -> feedback loops and data driven reponses
+------------------------------------------------------------
+Example of a devops organization
+------------------------------------------------------------
+
+A fictional company called "SocialConnect," which operates a popular social media website. SocialConnect wants to enhance its platform by adding an online marketplace feature, allowing users to buy and sell products similar to eBay. In this microservices-focused, DevOps-oriented organization, the company aims to deploy this functionality seamlessly by breaking down the process into manageable tasks for small, cross-functional teams to work together efficiently without silos.
+
+Here is how the teams might look:
+
+Authentication & Authorization Team:
+
+Members: Software Developer, Security Engineer, QA Engineer, DevOps Engineer
+Responsibilities:
+Develops authentication and authorization microservices for user authentication and access control within the marketplace.
+Ensures secure handling of user credentials and implements multi-factor authentication options.
+Conducts security testing and vulnerability assessments to identify and mitigate authentication-related risks.
+Implements monitoring and logging solutions to detect and respond to unauthorized access attempts.
+
+
+Product Listing & Inventory Team:
+
+Members: Software Developer, QA Engineer, DevOps Engineer
+Responsibilities:
+Develops microservices for managing product listings, including product details, images, and pricing information.
+Implements inventory management functionalities to track product availability and stock levels.
+Conducts testing to ensure accurate product listings and inventory updates.
+Implements automated deployment pipelines for continuous delivery of product listing updates.
+
+
+Search & Recommendation Team:
+
+Members: Software Developer, QA Engineer, DevOps Engineer
+Responsibilities:
+Develops search functionality to enable users to find products based on keywords, categories, and filters.
+Implements recommendation algorithms to suggest relevant products based on user preferences and browsing history.
+Conducts testing to validate search results accuracy and recommendation relevance.
+Implements caching mechanisms and optimization techniques to enhance search performance.
+
+
+Checkout & Payment Processing Team:
+
+Members: Software Developer, Security Engineer, QA Engineer, DevOps Engineer
+Responsibilities:
+Develops microservices for managing the checkout process, including shopping carts, order summaries, and payment gateways integration.
+Implements secure payment processing mechanisms to handle transactions securely.
+Conducts security testing to identify and address potential vulnerabilities in payment processing workflows.
+Implements monitoring and alerting systems to detect and respond to fraudulent activities or payment failures.
+
+
+Order Management & Fulfillment Team:
+
+Members: Software Developer, QA Engineer, DevOps Engineer
+Responsibilities:
+Develops microservices for order management, including order placement, order status tracking, and shipment tracking.
+Integrates with third-party logistics providers for order fulfillment and shipping.
+Conducts testing to ensure accurate order processing and fulfillment workflows.
+Implements automated notifications and alerts for order status updates and delivery tracking.
+
+Each of these teams has their own databases and infrastructure. They are loosely coupled, meaning that if one part of the site goes down like the marketplace, it doesn't affect anything else.
+
+They deploy microservices that communicate with eachother using rest apis. this makes the input and output of these services easy to test and scale up to meet demand.
+
+You build it, you own it. The same team that builds the app, maintains it, improves it, keeps it up to date.
+
+These teams utilize automated self service, infrastructure is explained in code in a github repository where applications like terraform will read from in order to build the resources needed to run an app.
+
+New infrasture requests aren't hidden behind an ops team that gets tickets asking them to build stuff. Instead, these small teams have a small amount of developers who will make provisioning files and everyone collaborates on it. You will then have a ops engineer who will review and consult the change to make sure it's good and a security engineer who will consult as well. Once everyone is happy, the new infrastructure code is published. Then it might look something like this: 
+
+- The app devs build a mimimum viable product in order to demonstrate the value in this new feature without over investing.
+- they may provision some test infrastructure or just build it locally on their pcs.
+- they may utilize ttd where they make tests for how the app should function and what it should give and recive.
+- then they make just enough code to make the test pass
+- then they refactor the code.
+- Once they have a working build, they provision more infrastructure.
+- The team will reuse some code from another project that makes a container image that also deploys a similar type of container.
+- They use this code to make a new packer image file for a new container image.
+- The team the builds a new terraform file that will build the infrastructure. Everyone collaborates in the small team. the DB admin, developers, QA, and consulting devops/sec engineers will help ensure its done correctly.
+- Terraform will then build this infrastructure once it is approve and pushed to the github repo.
+- This can be built as a docker container running in a kubernetes cluster that that manages auto scaling
+- After its all deployed, it's tested automatically to make sure the service works.
+- This could be something like selenium, which is composed of multiple tools for testing.
+- For example, selenium could try logging into the website and testing some features to make sure they all work.
+- Then new features are added in sprints after collecting user stories and feeback from users.
+- The developers build the new features and repeat the above steps.
+- this is all managed by a continuous delivery tool like ArgoCD which will provides a graphical interface that allows you to deploy this application from a high level overview.
+- Argo detects that your currently deployed app is currently out of line with whats in github when the code changes are deployed
+- You can then sync with github and argo will ochestrate the building of this new infra.
+- The cycle continues. Cpntinuous improvement through feedback and user stories.
+
+
+
+------------------------------------------------------------
+Infrastructure as code
+------------------------------------------------------------
+- infra defined in code in repos
+- tools like terraform, packer, and ansible get this code and then build the infrastructure.
+- never perform configs manually
+- use version control
