@@ -41,6 +41,8 @@ old way vs new
 - build once, handcrafted -> infrastructure as code, ephemeral
 - manual fulfullment -> automated self-service
 - alarms, callbacks and escalations -> feedback loops and data driven reponses
+
+
 ------------------------------------------------------------
 Example of a devops organization
 ------------------------------------------------------------
@@ -127,7 +129,7 @@ New infrasture requests aren't hidden behind an ops team that gets tickets askin
 - this is all managed by a continuous delivery tool like ArgoCD which will provides a graphical interface that allows you to deploy this application from a high level overview.
 - Argo detects that your currently deployed app is currently out of line with whats in github when the code changes are deployed
 - You can then sync with github and argo will ochestrate the building of this new infra.
-- The cycle continues. Cpntinuous improvement through feedback and user stories.
+- The cycle continues. Continuous improvement through feedback and user stories.
 
 
 
@@ -138,3 +140,73 @@ Infrastructure as code
 - tools like terraform, packer, and ansible get this code and then build the infrastructure.
 - never perform configs manually
 - use version control
+- Paralell infrastructure allows you to make a new production environment
+and then take down the old one.
+- servers are cattle, not pets
+- never make a change to a running container, change the image instead
+- keep images up to date.
+
+
+
+------------------------------------------------------------
+CI
+------------------------------------------------------------
+- Continuous Integration is continuously building, testing, and merging code to master
+- Work in small batches
+- Use branches for features and merge them daily
+- the longer time to merge = more merge conflicts
+- Every pull request should be build and tested
+- CI tools monitor version control and automate build process and test it when a change happens
+- Never merage pull request that is failing tests
+- Its faster and makes higher quality code
+
+
+
+------------------------------------------------------------
+CD
+------------------------------------------------------------
+- Continous Delivery is continously deploying to a production-like environment
+- Build software in such a way, master should always be deployable
+- Requires CI
+- You need a way to know if something will "break the build"
+- Deliver every change to a production-like environment
+- 
+
+------------------------------------------------------------
+CI/CD Pipeline
+------------------------------------------------------------
+Automated gates that create a pipline of checks:
+- Unit testing
+- Code quality checks
+- Integration testing
+- Security Testing
+- vulnerability scanning
+- Package signing
+-Output of one test feeds the next
+
+What you need:
+- A code repo
+- A build server (github actions)
+- An integration server
+- An artifact repository (jar files and other stuff the app needs to work)
+- Automatic config and deployment
+
+             CI              |             CD
+Plan > Code > Build > Test > | release > deploy > Operate
+
+Key principles
+- Build quality in
+- Work in small batches
+- Automate repetative tasks, let problem solving to the people
+- Relentlessly pursue continuous improvement
+- Everyone is responsible to fix a broken build
+
+
+How devops manage risk
+- Deployment is king, deploy early and often, deploy to testing env, preprod, and prod
+- Deployment is decoupled from activation
+- Feature flags turn your code on or off
+- Canary deployments, send to a small group of people and monitor for issues
+- Deployment is not one size fits all.
+
+
