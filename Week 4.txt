@@ -1,0 +1,34 @@
+------------------------------------------------------------
+How does organization affect devops
+------------------------------------------------------------
+- Teams should be small, dedicated, and crossfunctional.
+- They focus on 1 app
+- They have all the different skills needed (infra, dev, qa, etc)
+- Conways law:
+Back in 1968, Melvin Conway stated, “Any organization that designs a system (defined broadly) will 
+produce a design whose structure is a copy of the organization's communication structure.” For example, 
+if you ask four teams to build a compiler, you will get a four-pass compiler. You should not be surprised 
+you got a four-pass compiler; you asked four teams to build it. If you have a user interface team, an application team, 
+and a database team, you get a three-tier architecture. You should not be surprised you got a three-tier architecture;
+ you asked three teams to build it. This is Conway’s Law in action.
+- 
+
+
+
+
+
+
+
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
+------------------------------------------------------------
+
