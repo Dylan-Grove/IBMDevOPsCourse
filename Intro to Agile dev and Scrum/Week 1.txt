@@ -1,59 +1,198 @@
 ------------------------------------------------------------
-Fundamentals to ensuring the DevOps initiatives work:
+Intro
 ------------------------------------------------------------
-Think differently
-- Social coding
-- Working in small batches
-- Minimum viable product
-- Fail fast and often
-
-Work Differently
-- Test-driven development
-- Behaviour-driven development
-- Continuous integration
-- Continuous delivery
-
-Organize Differently
-- Organization impacts designs
-
-Measure Differently
-- Measure what matters
-- You get what you measure
-
+47% of agile transformations fails
+- Main reason is inexperience with integrating
+- Agile is a mindset
+- Recognizing when something is wrong is just as important as know how to do something right
 
 ------------------------------------------------------------
-Disruption
+agile principles
 ------------------------------------------------------------
-- 52% of fortune 500 companys from 200s are gone
-- All businessess will be distrupted
+- agile is an interative approach to project management that helps teams be responsive and deliver value to their customers faster
+- Adaptive planning, don't plan a year, plan a small integration
+- evolutionary development
+- Early delivery
+- continual improvement
+- responsiveness to change
+- Agile manifesto
+value individuals and interactions over processes and tools,
+working software over comprehensive documentation, 
+customer collaboration over contract negotiation, 
+and responding to change over following a plan.
+- Use smal, co-located, cross-function, self organzizing teams.
+- Build what is needed, not what was planned
 
 ------------------------------------------------------------
-Technology and Innovation
+Methodologies overview
 ------------------------------------------------------------
-- Technology serves as an enabler, not the sole driver, of innovation.
-- Innovation in business ideas is paramount to leverage technology effectively.
+Waterfall
+It's hard to swim up a waterfall (go back in phases)
+- Gather requirments
+- Design phase
+- Coding phase
+- Integration phase
+- Testing phase
+- Deploy software
+problems
+- no provisions for change
+- no idea if it works till the end
+- each step ends when the next begins
+- Mistakes found in the later stages are more expensive to fix
+- Long lead times
+- Teams work separetly, everyone unaware of how work affects other
+- People futherest from code are expected to run it
+Extreme program
+- Plan in months
+- Iterate plan in weeks
+- acceptance test in days 
+- stand up meetinging in one day
+- pair negotiation in hours
+- unit test in minutes
+- pair program in seconds
+- code
+pros 
+- simple
+- communication
+- feedback
+- respect
+- courage (honesty)
+Kanban
+- continuous flow in factory line
+- visualize the workflow
+- use cards that were taken along the factory line
+- limit WIP
+- Managing and enhancing the flow
+- make process policies explicit
+- continuous improval
 
 ------------------------------------------------------------
-DevOps Emergence
+working agile
 ------------------------------------------------------------
-- In 2009, John Allspaw showcased Flickr's groundbreaking deployment strategy, completing over ten deploys per day, a milestone in DevOps evolution.
-- DevOps integrates development and operation engineers throughout the development lifecycle, adhering to Lean and Agile principles for rapid and continuous software delivery.
+- Work in small batches
+- make MVPs minimum viable products
+Chepest thing you can build to test your hypothesis
+- behavior devien development
+Describe the behavior of the system from the outside in
+used for integration Testing
+single syntax that users and devs can understand
+Given, when, then 
+- test driven development
+test the system from the inside out 
+test case driven 
+write test case and write code until it passes
+red green refactor
+- pair programming
+two people writing code
+one person reviews while the other codes
+20 minute increments
 
 ------------------------------------------------------------
-Cultural Transformation
+Scrum
 ------------------------------------------------------------
-- DevOps embodies a cultural shift and a new work paradigm, emphasizing culture, methods, and tools.
-- Core characteristics include cultural transformation, automated pipelines, infrastructure as code, and immutable infrastructure.
+- Agile is a philosphy
+- scrum is a metholdology 
+- Is a management framework
+- Prescribes smal, cross function, self-organzizing teams
+- Provides a struct of roles, meetings, rules and artifacts 
+- Uses fixed- legth iterations call sprints 
+- has a goal of building a mvp increment every sprint 
+- easy to understand, difficult to master 
+sprint
+- one iteration through design, code, test, and deployment
+- each one should have a goal
+- usually 2-4 weeks
+steps in sprint
+- product backlog
+- backlog refinement
+- make a smaller sprint backlog that you want to accomplish in the next 2 weeks
+- do a sprint
+- daily scrum (what did you do today, yesterday, problems?)
 
 ------------------------------------------------------------
-DevOps Origins
+3 roles of scrum
 ------------------------------------------------------------
-- The DevOps movement traces back to 2007 when Patrick Debois and Andrew Clay Shafer convened conferences to discuss shared experiences.
-- Allspaw's 2009 presentation, "10+ Deploys Per Day – Dev and Ops Cooperation at Flickr," along with events like DevOpsDays initiated by Debois, contributed to DevOps' proliferation.
+Product owner
+- THey make decisions about the product
+- represent stakeholder interests
+- articulate the product vision
+- final arbiter of requirment questions
+- constantly reprioritize produck backlog, adjusting them
+- accept or reject increments
+- decide whether to ship
+- decide wether to pivot
+Scrum master
+- mentors for scrum
+- facilitates the scrum process
+- creates an environment that allows teams to self-orgainziing
+- sheild the team from external interference
+- help resolve impediments
+- enforce timeframes
+- capture data and adjust forecasts
+- no management authority over the team
+Scrum team
+- devs, testers, BA, domain experts
+- self orgainziing
+- all equal
+- self managing, they assign their own work
+- 2-7 members
+- most successful when they are co-located
+- dedicated, long term, full time members
+- negotiate comitments with the product owner
 
 ------------------------------------------------------------
-Knowledge Dissemination
+Artifacts, events, benefits
 ------------------------------------------------------------
-- Publications like "Continuous Delivery" (2011), "The Phoenix Project" (2015), and "The DevOps Handbook" (2016) elucidated DevOps methodologies.
-- Pioneers such as Patrick Debois, Andrew Clay Shafer, John Allspaw, Jez Humble, Gene Kim, John Willis, Bridget Kromhout, and Nicole Forsgren drove DevOps' adoption and demonstrated its efficacy.
-- Through practitioner-to-practitioner dissemination, the DevOps ethos gained momentum, showcasing its transformative potential in modern workflows.
+Artifacts
+- product backlog, all the things you want to add to a product
+- sprint backlog, stuff you will do in next sprint
+- done incremenet, what you get after a sprint
+
+events
+- sprint planning meeting
+- daily scrum meeting
+ask 3 questions,
+- sprint
+- sprint reviews
+
+benefits
+- higher productivity
+- better product 
+- reduced time to market
+- increased stakeholder satisfactio
+- better team dynamics
+- happier employees
+
+scrum vs Kanban
+- cadenence 
+fixed lengther sprinters vs continous flow
+release metholdology
+- end of each sprint vs continous delivery
+roles
+- product owner, scrum master, dev team vs no roles
+key metircs
+- velocity vs cycle time
+change philospohy
+- teams should strive to not change sprint forecase vs change happens at any time
+
+------------------------------------------------------------
+Organizational impact of Agile
+------------------------------------------------------------
+Proper organiztion is critical to successful
+existing teams may need to be reoganized
+conways law
+- Any organization that designs a system defined broadly 
+- will produce a design whose structure is a
+- copy of the organization's communication structure. 
+Teams are loosely copled but tightly aligned
+each team has it owns mission (mini startups)
+teams have end-to-end responsisbility
+long term mission is critical
+motived people build better stuff
+its fast, decisions happen locally in the team
+
+------------------------------------------------------------
+Mistaking Iterative Development for Agile
+------------------------------------------------------------
+- Feedback is the diffence between agile and iteration
+- It must be deployed at all times, otherwise its water scrum fall
