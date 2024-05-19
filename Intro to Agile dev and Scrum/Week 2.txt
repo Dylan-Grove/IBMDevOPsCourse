@@ -1,0 +1,109 @@
+------------------------------------------------------------
+Destination Unknown
+------------------------------------------------------------
+- plan iteritivly
+
+------------------------------------------------------------
+Agile roles and the need for training
+------------------------------------------------------------
+Failure recipes
+- Product manager becomes product owner
+- Project manager becomes scrum master
+- Dev alone become scrum team
+
+------------------------------------------------------------
+Kanban and agile palnning tools
+-------------------------------------------------------------
+- tools wont make you agile
+- tools can support agile process
+- there are many agile planning tools
+zenhub
+- plugin to github
+- it provides a kanban board project managementand reporting
+- zenhub is customizable
+-why use it?
+- helps you manage where you are in the project based on github issues
+- provides an easy way to let management know how you are doing
+-what is kanban board
+- to do, doing done
+zenhub process
+- new issues >
+- Icebox > 
+- product backlog >
+- sprint backlog >
+- In progress >
+- Review/QA >
+- Done
+
+------------------------------------------------------------
+Creating good user stories
+------------------------------------------------------------
+- A user story represents a small peice of business vlaue that team can deliver in an interactions
+they should contain:
+- A description of need nad business value
+user stories document a person requesting a function to achieve a goal
+as a __ I need ___ so that ____
+- any assumptions or details
+- The definition of done
+Gerkin syntax
+Given some precondition, when some event happens, then some outcome
+
+INVEST for user stories - bill wake
+- Independent
+- Negotiable
+- Valuable
+- Estimable
+- small
+- Testable
+
+Epics
+- Really big ideas
+- bigger than a single sprint
+- user story that is too big to estimate on
+- backlog items tend to start as epics when they are lower priority and less defined
+- for sprint planning, epics should be broken down into smaller stories
+
+------------------------------------------------------------
+Effectively using Story Points
+------------------------------------------------------------
+Story Points
+- a metric used to estimate the difficulty of implementing a given user story
+- an abstract measure of overall effort
+- it measures effort, uncertainty, and complexity
+- Humans are bad at estimating time to completion
+- Story points use t shirt sizes, tools use a fibonaci sequence
+1 2 3 5 6 13 21
+- they are relavent
+- a story should be small, just a couple days
+- large stories should be broken down to smaller
+story point anti pattern
+- equating a story point to wall-clock time
+- agree on what average means
+
+------------------------------------------------------------
+Building the Product Backlog
+------------------------------------------------------------
+- unimplemented stories not yet in a sprint
+- stories are ranked in order of importance or business balues
+- stories are more detailed at the top
+
+
+------------------------------------------------------------
+Backlog Refinement: Getting Started
+------------------------------------------------------------
+- Keep the product backlog rankend by priority
+- break large stories down to smaller
+- make sure that user stories near the top are groomed and complete
+meeting
+- who should attend
+-- product owner
+-- scrum master
+-- development team optional
+-- lead dev/architech
+- make sure the devs have enough to start with
+- start with new issues first
+- take stories and deicde if they should be moved or rejected
+- goal is to make stories sprint ready
+- refine backlog every sprint
+- have atleast 2 sprints worth of stires ready
+- 
